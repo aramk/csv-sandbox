@@ -19,6 +19,6 @@ csv.parse(csvData, {columns: true}, function(err, result) {
   if (outputPath) {
     fs.writeFileSync(outputPath, JSON.stringify(result));
   } else {
-    console.log(result);
+    console.log(JSON.stringify(result));
   }
 });
